@@ -63,6 +63,100 @@ I am a boy
 ```
 
 ```
+STRING CONCATENATION- TWO STRINGS CAN BE JOINED BY USING THE + OPERATOR.
+>>>string1 = abra
+>>>string2 = cadabra
+
+>>>magic_string = string1 + string2
+>>>print(magic_string)
+abracadabra              NOTICE THAT THE STRINGS ARE JOINED WITHOUT ANY BLANK SPACES OR WHITESPACES BETWEEN THEM. TO ADD A BLANK SPACE:
+
+
+>>>magic_word = string1 + " " + string2
+>>>print(magic_word)
+abra cadabra
+
+```
+
+```
+STRING INDEXING- Each character in a string has a numbered position called INDEX.
+
+>>>fruit = "pomegranate"
+>>>print(fruit[4])
+g
+
+>>>veggies = "lady finger"
+>>>print(veggies[11])
+
+AN INDEX ERROR ARISES WHERE IT IS SAYING THAT STRING INDEX IS OUT OF RANGE.
+
+```
+
+```
+STRING SLICING- SUPPOSE WE DO NOT WANT TO PRINT THE STRING FULL, ie WE WANT SOME PART OF IT ONLY THEN WE USE STRING SLICING.
+
+>>>print(fruit[0:5])
+pomeg                            fruit[0:5] MEANS INDEX FROM 0 to 4 CHARACTERS WILL BE PRINTED. THE CHARACTERS PRINTED AFTER SLICING IS CALLED A SLICE.
+
+STRINGS ARE IMMUTABLE MEANS WE CANNOT CHANGE THEM ONCE WE HAVE CREATED THEM. IF WE JUST ONLY WANT TO CHANGE OR ALTER THE STRING WE CAN USE CONCATENATION AND SLICING BOTH:
+
+>>>word = "goal"
+>>>word = "f" + word[1:len(word)]
+>>>print(word)
+foal
+
+```
+
+```
+PRACTICE QUESTIONS:
+
+1. Create a string and print its length using the len() function.
+
+>>>college = "Acropolis"
+>>>len_college = len(college)
+>>>print(len_college)
+9
+
+2. Create two strings, concatenate them, and print the resulting string.
+
+>>>name1 = "Aaditya"
+>>>name2 = "Jain"
+
+>>>new_name = name1 + name2
+>>>print(new_name)
+AadityaJain
+
+
+3. Create two strings and use concatenation to add a space in-between them. Then print the result.
+
+>>>new_naam = name1 + " " + name2
+>>>print(new_naam)
+Aaditya Jain
+
+
+4. Print the string "zing" by using slice notation on the string "bazinga" to specify the correct range of characters.
+
+>>>my_word = "bazinga"
+>>>my_word = my_word[2:6]
+>>>print(my_word)
+zing
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
