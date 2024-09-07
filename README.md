@@ -60,7 +60,10 @@ I study in acropolis college. It is a very good college
 >>>print('I am a boy')
 I am a boy
 
-3. Print a string that spans multiple lines, with whitespace preserved.
+```
+
+```
+
 
 
 
