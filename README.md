@@ -98,7 +98,8 @@ STRING SLICING- SUPPOSE WE DO NOT WANT TO PRINT THE STRING FULL, ie WE WANT SOME
 >>>print(fruit[0:5])
 pomeg                            fruit[0:5] MEANS INDEX FROM 0 to 4 CHARACTERS WILL BE PRINTED. THE CHARACTERS PRINTED AFTER SLICING IS CALLED A SLICE.
 
-STRINGS ARE IMMUTABLE MEANS WE CANNOT CHANGE THEM ONCE WE HAVE CREATED THEM. IF WE JUST ONLY WANT TO CHANGE OR ALTER THE STRING WE CAN USE CONCATENATION AND SLICING TOGETHER:
+STRINGS ARE IMMUTABLE MEANS WE CANNOT CHANGE THEM ONCE WE HAVE CREATED THEM. IF WE JUST ONLY WANT TO CHANGE OR ALTER THE STRING WE CAN USE CONCATENATION AND SLICING TOGETHER: IF WE WANT TO ALTER A STRING, WE MUST CREATE AN
+ENTIRELY NEW STRING.
 
 >>>word = "goal"
 >>>word = "f" + word[1:len(word)]
@@ -270,6 +271,119 @@ TRUE
 TRUE
 
 ```
+
+```
+INPUTS- IN THIS TOPIC WE WILL LEARN HOW TO GET INPUT FROM THE USER AND DISPLAY BACK IT ON  THE SCREEN USING THE input() FUNCTION.
+If we write input() in IDLE then actually nothing happens on front-end but the prompt(>>>) do not get displayed on the another line. IT MEANS THAT WE HAVE TO TYPE SOME TEXT!
+
+>>>input()
+<In next line nothing happened but prompt is also not visible>
+"Hello"
+'Hello'
+>>>
+
+THE TEXT WE ENTERED IS REPEATED ON A NEW LINE WITH SINGLE DELIMETRES. THIS IS BECAUSE INPUT FUNCTION RETURNS A TEXT AS A STRING.
+
+>>>input()
+5
+'5'
+>>>
+
+TO BE MORE USER-FRIENDLY TO THE INPUT, WE NEED TO GIVE IT SOME PROMPT(STRING): few examples:
+
+>>>prompt = "Hi, What's your profession?"
+>>>user_input = input(prompt)
+>>>print("My profession is: ", user_input)
+Hi, What's your profession?Prompt engineer
+My profession is: Prompt engineer
+
+```
+
+```
+PRACTICE QUESTIONS OF INPUTS:
+
+1. Write a script that takes input from the user and displays that input back.
+
+>>>input()
+I am 18 years old
+'I am 18 years old'
+>>>
+
+2. Write a script that takes input from the user and displays the input in lowercase.
+
+>>>language = "FREncH"
+>>>input(language.lower())
+french
+
+3. Write a script that takes input from the user and displays the number of characters inputted.
+
+>>>work = input("where do you work?")
+>>>print(len(work))
+where do you work?McKinsey
+8
+>>>
+
+```
+
+```
+CHALLENGE QUESTION:
+
+3.Write a script named first_letter.py that ﬁrst prompts the user for input by using the string "Tell me your password:" The script should
+then determine the ﬁrst letter of the user’s input, convert that letter to upper-case, and display it back.
+
+>>>first_letter = input("Tell me your password:")
+>>>user_input = first_letter[0]
+>>>print("The first letter of the password is " + user_input.lower())
+
+Tell me your password:No
+The first letter of the password is n.
+
+```
+
+```
+STRINGS AMD ARITHMETIC OPERATORS:
+
+>>>num = "6"
+>>>digit = "9"
+>>>print(num + digit)
+69
+
+Note here that the result expected was 15 but here camee 69!. THERE'S A REASON FOR THAT TOO.
+HERE 6 IS NOT A INTEGER, IT IS A STRING BCOZ OF DOUBLE QUOTATION MARKS, SIMILARLY SAME FOR 9 TOO.
+HERE ACTUALLY STRING CONCATENATION HAPPENED INVISIBLY BECOZ WE HAVE NOT LEARNT IT WITH NUMBERS MUCH. BUT WITH THISS EXAMPLE WE LEARNED IT.
+
+>>>num = "7"
+>>>print(num * 3)
+777
+
+HERE 7 IS REAPEATED THREE TIMES NOT THAT 7 * 3. BECOZ 7 HERE IS A STRING
+
+In other words, multiplying a string by an integer n concatenates that string with itself n times.
+
+When the * operator is used with a string on either the left or the right side, it always expects an integer on the
+other side. FOR EX:
+
+>>>print("12" * "3")
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#39>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+
+Python can only concatenate str (not "int") to str.
+
+```
+
+```
+TYPECASTING: CONVERTING STRINGS TO NUMBERS AND VICE VERSA. SAME FOR THE FLOAT DATA TYPE,
+
+
+
+
+
+
+
+
 
 
 
