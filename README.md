@@ -375,7 +375,104 @@ Python can only concatenate str (not "int") to str.
 ```
 
 ```
-TYPECASTING: CONVERTING STRINGS TO NUMBERS AND VICE VERSA. SAME FOR THE FLOAT DATA TYPE,
+TYPECASTING: CONVERTING STRINGS TO NUMBERS AND VICE VERSA. SAME FOR THE FLOAT DATA TYPE ALSO.
+
+To perform arithmetic operations on a string which contains numbers, first we have to convert it to int type from str type by using two
+methods, int and float.
+
+>>>print(type(int("12")))
+<class 'int'>
+
+>>>int("12.0")
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#6>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '12.0'
+
+Even though the extra 0 after the decimal place doesn’t add any value to the number, Python won’t change 12.0 into 12 because it would 
+result in the loss of precision.
+
+>>>nums = input("Enter your number:", )
+>>>user_input = int(nums) * 2
+>>>print(user_input)
+Enter your number:5
+10
+
+
+>>>fries_value = 80
+>>>var = "I want to eat" + fries_value + fries
+>>>print(var)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#14>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+
+BUT TO JUST CORRECT THIS CODE:
+
+>>>fries_value = 80
+>>>print("I want to eat" +  str(fries_value)  + "fries")
+I want to eat80fries
+
+ALSO BELOW CODE WILL ALSO GIVE THE SAME OUTPUT:
+>>>print("I want to eat" +  str(80)  + "fries")
+
+str CAN ALSO HANDLE ARITHMETIC OPERATIONS:
+
+>>>aloo_parathax = 6
+>>>aloo_parathay = 2
+>>>print("Nah!" +  "Only"  +  str(aloo_parathax - aloo_parathay)  +  "paratha"  +  "left")
+Nah!Only4parathaleft
+
+```
+
+```
+PRACTICE QUESTIONS OF TYPECASTING:
+
+1. Create a string containing an integer, then convert that string into an actual integer object using int(). Test that your new object is
+a number by multiplying it by another number and displaying the result.
+
+>>>strz_int = "5"
+>>>print(strz_int * 3)
+WE GET HE OUTPUT HERE AS 555, NOW CONVERTING IT TO INT
+
+>>>str_intz = int("5")
+>>>print(str_intz * 5)
+HERE WE GET THE OUTPUT AS 25 WHICH IS OUR REQUIRED OUTPUT.
+
+
+2. Create a string object and an integer object, then display them side-by-side with a single print statement by using the str() function.
+
+>>>daily_brush = 2
+>>>print("I brush"  +  str(2)  +  "times a day")
+I brush2times a day
+
+
+4. Write a script that gets two numbers from the user using the input() function twice, multiplies the numbers together, and
+displays the result. If the user enters 2 and 4, your program should print the following text: The product of 2 and 4 is 8.0.
+
+>>>x = int(input("Enter 1st no.:", ))
+>>>y = int(input("Enter 2nd no.:", ))
+
+>>>z = float(x * y)
+>>>print("The product of 2 and 4 is", z)
+The product of 2 and 4 is 8.0
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
