@@ -435,7 +435,7 @@ a number by multiplying it by another number and displaying the result.
 
 >>>strz_int = "5"
 >>>print(strz_int * 3)
-WE GET HE OUTPUT HERE AS 555, NOW CONVERTING IT TO INT
+WE GET THE OUTPUT HERE AS 555, NOW CONVERTING IT TO INT DATA TYPE;
 
 >>>str_intz = int("5")
 >>>print(str_intz * 5)
@@ -462,6 +462,19 @@ The product of 2 and 4 is 8.0
 ```
 
 ```
+F-STRINGS:
+REMEMBER THIS EXAMPLE WE HAD DONE:
+
+>>>fries_value = 80
+>>>print("I want to eat" +  str(fries_value)  + "fries")
+I want to eat80fries
+
+WLL THIS WAS AA GOOD METHOD FOR CONVERTING NUMBERS TO STRINGS AND THEN  USE THEM IN SENTENCES.
+WE HAVE ANOTHER SHORT METHOD TO DO THIS CALLED F-STRINGS:
+
+
+
+
 
 
 
