@@ -469,8 +469,70 @@ REMEMBER THIS EXAMPLE WE HAD DONE:
 >>>print("I want to eat" +  str(fries_value)  + "fries")
 I want to eat80fries
 
-WLL THIS WAS AA GOOD METHOD FOR CONVERTING NUMBERS TO STRINGS AND THEN  USE THEM IN SENTENCES.
+WLL THIS WAS AA GOOD METHOD FOR CONVERTING NUMBERS TO STRINGS AND THEN USE THEM IN SENTENCES.
 WE HAVE ANOTHER SHORT METHOD TO DO THIS CALLED F-STRINGS:
+
+Suppose we have a name variable which has a value Tony and two other variables hands and legs.
+WE WANT TO CREATE A SENTENCE AS: Tony has 2 hands and 3 legs. WE WILL DO IT LIKE BELOW;
+
+>>>name = "Tony"
+>>>hands = 2
+>>>legs = 3
+
+>>>f"{name} has {hands} hands and {legs} legs".
+'Tony has 2 hands and 3 legs'
+
+>>>n = 3
+>>>m = 4
+>>>f"{n} times {m} is {n * m}"
+'3 times 4 is 12'
+
+```
+
+```
+PRACTICE QUESTIONS:
+
+1. Create a float object named weight with the value 0.2, and create a string object named animal with the value "newt". Then use these
+objects to print the following string using only string concatenation: 0.2 kg is the weight of the newt.
+
+weight = 0.2
+animal = "newt"
+
+print(str(0.2) + " " + "kg" + " " + "is" + " " + "the" + "weight" + " " + "of" + " " + "the" + " " + "newt")
+'0.2 kg is the weight of the newt'
+
+2. Display the same string using an f-string.
+
+f"{weight} kg is the weight of the {animal}"
+'0.2 kg is the weight of the newt'
+
+```
+
+```
+FINDING STRING IN A STRING OR FINDING SUBSTRING:
+For this we use .find() . THIS METHOD RETURNS THE INDEX OF THE WORD WE WANT TO FIND.
+
+>>>prompt = "I am a boy"
+>>>prompt.find("am")
+2
+
+If .find() doesn’t ﬁnd the desired substring, it will return -1 instead.
+
+IF IN A SITUATION, A SUBSTRING OCCURS 2 OR MORE TIMES IN A SENTENCE THEN .find()
+RETURNS THE INDEX OF THE SUBSTRING WHICH OCCURS FIRST.
+
+>>>sentence = "I put a string in a string"
+>>>sentence.find("string")
+8
+
+
+
+
+
+
+
+
+
 
 
 
