@@ -498,7 +498,7 @@ objects to print the following string using only string concatenation: 0.2 kg is
 weight = 0.2
 animal = "newt"
 
-print(str(0.2) + " " + "kg" + " " + "is" + " " + "the" + "weight" + " " + "of" + " " + "the" + " " + "newt")
+print(str(0.2) + " " + "kg" + " " + "is" + " " + "the" + " " + "weight" + " " + "of" + " " + "the" + " " + "newt")
 '0.2 kg is the weight of the newt'
 
 2. Display the same string using an f-string.
