@@ -173,11 +173,11 @@ THERE ARE THREE METHODS TO REMOVE WHITESPACE
 .strip()    REMOVES WHITESPACE FROM RIGHT AND LEFT SIDE  OF THE STRING.
 
 TWO MORE STRING METHODS:
-.starswitch()            ENSURES THE STARTING CHARACTER OF THE STRING.
-.endswitch()             ENSURES THE ENDING CHARACTER OF THE STRING.
+.startswith()            ENSURES THE STARTING CHARACTER OF THE STRING.
+.endswith()             ENSURES THE ENDING CHARACTER OF THE STRING.
 
 >>>name = "TonyStark"
->>>name.startwitch("To")
+>>>name.startswith("To")
 True
 
 >>>name.endswith("ks")
